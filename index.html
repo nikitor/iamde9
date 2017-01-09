@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="D€9">
+    
+	<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Karla%7CMontserrat">
+    <title>D€9</title>
+    <link href="assets/css/bootstrap.css" rel="stylesheet">
+	<script type="text/javascript" src="asset/prefijos/prefixfree.min.js"></script>	
+	<link href="assets/css/reset.css" rel="stylesheet">
+    <link href="assets/css/style.css" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Josefin+Slab" rel="stylesheet"> 
+	<link href="https://fonts.googleapis.com/css?family=Comfortaa|Passion+One" rel="stylesheet"> 
+    <link href="assets/css/font-awesome.min.css" rel="stylesheet">
+	
+	<!-- <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon"> -->
+	<!-- <link rel="icon" href="/favicon.ico" type="image/x-icon"> -->
+	<link rel="shortcut icon" href="/Favi.ico" type="image/x-icon">
+	<link rel="icon" href="/Favi.ico" type="image/x-icon">
+ 
+
+<style type="text/css">
+	.single-image img{
+			width:16.66%;
+			height:auto;
+		}
+  .button{background-image:url("assets/img/Boton1.png");}
+</style>
+ 
+
+	<script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
+	
+
+	<script type="text/javascript" src="fancybox/lib/jquery.mousewheel-3.0.6.pack.js"></script>
+	
+
+	<link rel="stylesheet" href="fancybox/source/jquery.fancybox.css?v=2.1.5" type="text/css" media="screen" />
+	<script type="text/javascript" src="fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+	
+
+	<link rel="stylesheet" href="fancybox/source/helpers/jquery.fancybox-buttons.css?v=1.0.5" type="text/css" media="screen" />
+	<script type="text/javascript" src="fancybox/source/helpers/jquery.fancybox-buttons.js?v=1.0.5"></script>
+	<script type="text/javascript" src="fancybox/source/helpers/jquery.fancybox-media.js?v=1.0.6"></script>
+	
+	<link rel="stylesheet" href="fancybox/source/helpers/jquery.fancybox-thumbs.css?v=1.0.7" type="text/css" media="screen" />
+	<script type="text/javascript" src="fancybox/source/helpers/jquery.fancybox-thumbs.js?v=1.0.7"></script>
+ 	<script>
+	
+		$(function(){
+		
+			$(".single-image").fancybox({
+				openEffect : 'elastic',  
+		    	closeEffect	: 'elastic',
+		    	openSpeed:'normal', 
+		    	closeSpeed:'normal',
+		    	helpers : {
+		    		title : {
+		    			type : 'inside' 
+		    		},
+		    		overlay : {
+		    			closeClick : true 
+       			    }
+		    	},
+		    	padding:11
+		    	
+			});
+			
+			$(".gallery-image").fancybox({
+				openEffect : 'fade', 
+		    	closeEffect	: 'fade',
+		    	closeBtn: false,
+		    	helpers : {
+		    		title : {
+		    			type : 'over' 
+		    		},
+		    		thumbs : {
+			            width: 50
+			        },
+			        buttons	: {},
+			        overlay : {
+			            css : {
+			                'background' : 'rgba(0,0,0,0.5)'
+			            }
+        			}
+					
+		    	}
+		    			    	
+			});
+			
+			
+			$(".fancyOther").fancybox({
+				width		: '70%',
+				height		: '70%',
+				maxWidth	: 1440,
+				maxHeight	: 1080,
+				fitToView	: false,
+				autoSize	: false,
+				closeClick	: false,
+				openEffect	: 'none',
+				closeEffect	: 'none'
+			});
+			
+			
+			$(".fancyOther2").click(function(){
+				$.fancybox( '<div><h1>Lorem Lipsum</h1><p>Lorem lipsum</p></div>', {
+   					 title : 'Custom Title',
+   					 width		: '70%',
+					height		: '70%',
+					maxWidth	: 1440,
+					maxHeight	: 1080,
+					fitToView	: false,
+					autoSize	: false,
+					closeClick	: false	 
+				});
+			});
+			
+			
+			$(".fancyMedia").fancybox({	
+				helpers : {
+					media : {}
+				}
+			});
+			
+			$(".fancyMediaMapa").fancybox({	
+				helpers : {
+					media : {}
+				},
+				 width		: '100%',
+				height		: '100%'
+				
+			});
+
+			
+			
+		
+			
+		});
+		
+	</script>
+  </head>
+
+  <body onload="mostrarinicio()" data-spy="scroll" data-offset="0" data-target="#theMenu" align="center">
+
+	
+	<div id="container">
+		<div id="logo">
+		
+		 <div id="div1" class="oculto">
+			
+			<div id="div1contenido">
+				<a class="single-image" href="assets/img/Photos/a.jpg" title="Home sweet home"><img src="assets/img/Photos/thumbnails/a.jpg" alt=""/></a>
+				<a class="single-image" href="assets/img/Photos/b.jpg" title="Portraits through melodies"><img src="assets/img/Photos/thumbnails/b.jpg" alt=""/></a>
+				<a class="single-image" href="assets/img/Photos/c.jpg" title="Still winter"><img src="assets/img/Photos/thumbnails/c.jpg" alt=""/></a>
+				<a class="single-image" href="assets/img/Photos/d.jpg" title="African king"><img src="assets/img/Photos/thumbnails/d.jpg" alt=""/></a>
+				<a class="single-image" href="assets/img/Photos/e.jpg" title="Neo classic"><img src="assets/img/Photos/thumbnails/e.jpg" alt=""/></a>
+				<a class="single-image" href="assets/img/Photos/f.jpg" title="Beast"><img src="assets/img/Photos/thumbnails/f.jpg" alt=""/></a>
+				<a class="single-image" href="assets/img/Photos/g.jpg" title="Seeing sound"><img src="assets/img/Photos/thumbnails/g.jpg" alt=""/></a>
+				<a class="single-image" href="assets/img/Photos/h.jpg" title="King"><img src="assets/img/Photos/thumbnails/h.jpg" alt=""/></a>
+				<a class="single-image" href="assets/img/Photos/i.jpg" title="Mona lisa"><img src="assets/img/Photos/thumbnails/i.jpg" alt=""/></a>
+				<a class="single-image" href="assets/img/Photos/j.jpg" title="still summer"><img src="assets/img/Photos/thumbnails/j.jpg" alt=""/></a>
+				<a class="single-image" href="assets/img/Photos/k.jpg" title="God save the G"><img src="assets/img/Photos/thumbnails/k.jpg" alt=""/></a>
+				<a class="single-image" href="assets/img/Photos/l.jpg" title="#Blue"><img src="assets/img/Photos/thumbnails/l.jpg" alt=""/></a>
+				<a class="single-image" href="assets/img/Photos/m.jpg" title="Thanks Paris"><img src="assets/img/Photos/thumbnails/m.jpg" alt=""/></a>
+				<a class="single-image" href="assets/img/Photos/n.jpg" title="Thanks Lisboa"><img src="assets/img/Photos/thumbnails/n.jpg" alt=""/></a>
+				<a class="single-image" href="assets/img/Photos/o.jpg" title="Matrix world, matrix mind... water soul"><img src="assets/img/Photos/thumbnails/o.jpg" alt=""/></a>
+				<a class="single-image" href="assets/img/Photos/p.jpg" title="Silence is gold"><img src="assets/img/Photos/thumbnails/p.jpg" alt=""/></a>
+				<a class="single-image" href="assets/img/Photos/q.jpg" title="Thank you Daddy"><img src="assets/img/Photos/thumbnails/q.jpg" alt=""/></a>
+				<a class="single-image" href="assets/img/Photos/r.jpg" title="Grateful"><img src="assets/img/Photos/thumbnails/r.jpg" alt=""/></a>
+				<a class="single-image" href="assets/img/Photos/s.jpg" title="What i am, for what i will be"><img src="assets/img/Photos/thumbnails/s.jpg" alt=""/></a>
+				<a class="single-image" href="assets/img/Photos/t.jpg" title="#Water"><img src="assets/img/Photos/thumbnails/t.jpg" alt=""/></a>
+				<a class="single-image" href="assets/img/Photos/u.jpg" title="Place Of Birth"><img src="assets/img/Photos/thumbnails/u.jpg" alt=""/></a>
+				<a class="single-image" href="assets/img/Photos/v.jpg" title="from D€9 to #You"><img src="assets/img/Photos/thumbnails/v.jpg" alt=""/></a>
+			
+			
+			</div>	
+				
+
+
+		 
+		 </div>
+		 
+		 <div id="div2" class="oculto"><div id="div2contenido">
+		 
+		 <iframe width="70%"  src="https://www.youtube.com/embed/videoseries?list=PL0Q9uce94yJh-AOT0v2U7594RNPJcJTOX" frameborder="0" allowfullscreen></iframe>
+		 
+		 
+		 
+		 
+		 </div></div>
+		 <div id="div3" class="oculto"><div id="div3contenido"><iframe width="70%"  src="https://www.youtube.com/embed/videoseries?list=PL0Q9uce94yJgxjDv54FD-_8Y2mpOeVE_R" frameborder="0" allowfullscreen></iframe></div></div>
+		 <div id="div4" class="oculto"><div id="div4contenido"><p>info@iamde9.com</p>
+		 <p><span style="color:#4286f4">David</span> info@darkhood.com</p>
+		 </div></div>
+		 <div id="div5" class="oculto"><div id="div5contenido"></div></div>
+		 <div id="div6" class="oculto"><div id="div6contenido"><p>Luxury music at its finest... </p>
+
+<p>D€9 blends the north with the south, the smoth with the rough, 
+the fire with the  water, the cold with the warm
+the beast with the beauty...</p>
+ 
+<p>Mixing electronic waves with trival sounds,
+leaded by sophisticated melodies</p>
+
+<p>with unlimited creativity.</p>
+ 
+<p>Formerly known as <br> <br><a href="http://www.darkhood.com/en/dowty-ebi-de9/" target="blank_"   >[Dowty Ebi]     
+</a>
+</p></div></div>
+		
+		
+		
+		
+		
+		</div>
+		<div id="buttons">
+		
+			
+			<div id="buttonsc">
+											
+				<a href="#div1" class="mo"><div  class="button" id="button2">PHOTOS</div></a>
+				
+				
+				<a href="#div2" class="mo"><div  class="button" id="button3">MUSIC</div></a>
+				
+						
+				<a href="#div3" class="mo"><div  class="button" id="button4">VIDEOS</div></a>
+			
+
+				<div id="fase2">
+				<div id="fraseizquierda">
+
+					<p>Just what you expected from the Universe...?</p>
+					<p>Love? God?..</p>
+					<p> I am D€9 #TheLoveBeast </p> 
+				</div>	
+				<div id="frasecentral">
+				
+									
+					<a  href="#div6" class="mo"><div id="button6"><img src="assets/img/DE9_logo.png"></img></div></a>
+				</div>
+				<div id="frasederecha">
+					<p>• Music is #Luxury :||</p>
+					<p>• Billboard Artist </p> 
+					<p>• Founder of Dark Hood</p>
+					<p>...be my witness!</p>
+				</div>	
+				</div>
+			
+			</div>
+		</div>
+		
+				<div id="social">
+				
+										
+					<a  href="#div5" class="mo"><div  class="button" id="button1">HOME</div></a>
+					
+					<div id="yasta" >
+					
+						<!-- <a target="blank_" href="https://www.instagram.com/de9thelovebeast/"><img src="assets/img/instagram.png"  width="30px"></img></a> -->
+						<!-- <a target="blank_" href="https://www.facebook.com/iamde9"><img src="assets/img/fb.png"  width="30px"></img></a> -->
+						<!-- <a target="blank_" href="https://www.youtube.com/de9tv"><img src="assets/img/youtube.png"  width="64px"></img></a> -->
+						<!-- <a target="blank_" href="https://soundcloud.com/iamde9"><img src="assets/img/nube.png"  width="64px"></img></a> -->
+						<!-- <a target="blank_" href="https://twitter.com/de9iam"><img src="assets/img/tw.png"  width="30px"></img></a> -->
+				
+						<a target="blank_" href="https://www.instagram.com/de9thelovebeast/"><img src="assets/img/soc_i.png" ></img></a>
+						<a target="blank_" href="https://www.facebook.com/iamde9"><img src="assets/img/soc_fb.png" ></img></a>
+						<a target="blank_" href="https://www.youtube.com/de9tv"><img src="assets/img/soc_yt.png" ></img></a>
+						<a target="blank_" href="https://soundcloud.com/iamde9"><img src="assets/img/soc_sc.png" ></img></a>
+						<a target="blank_" href="https://twitter.com/de9iam"><img src="assets/img/soc_t.png" ></img></a>
+					</div>
+								
+					  <a href="#div4" class="mo"><div class="button" id="button5">CONTACT</div></a>
+				</div>
+			
+			
+		
+		</div>
+		
+	</div>
+		
+	
+
+		<script>
+
+	var x;
+			x=$(document);
+			x.ready(inicializar);
+			
+			function inicializar ()
+			{
+			
+			
+			
+					$(".oculto").hide();              
+					$(".mo").click(function(){
+						var nodo = $(this).attr("href");  
+						$(".oculto").hide();                             
+						$(nodo).show();
+						return false;
+					});
+        
+
+            }
+			
+		
+
+            
+	function mostrarinicio()
+			{var x;
+			x=$("#div5");
+			x.fadeIn(500);}
+	$("#button1").click(function() {
+	$('body').removeClass();
+	$('body').addClass('class3',{duration:500});
+	});
+
+	$("#button2").click(function() {
+	$('body').removeClass();
+	$('body').addClass('class2',{duration:500});
+	});
+	
+	$("#button3").click(function() {
+	$('body').removeClass();
+	$('body').addClass('class1',{duration:500});
+	});
+
+	$("#button4").click(function() {
+	$('body').removeClass();
+	$('body').addClass('class2',{duration:500});
+	});
+	
+	$("#button5").click(function() {
+	$('body').removeClass();
+	$('body').addClass('class1',{duration:500});
+	});
+	
+	$("#button5").click(function() {
+	$('body').removeClass();
+	$('body').addClass('class1',{duration:500});
+	});
+	$("#button6").click(function() {
+	$('body').removeClass();
+	$('body').addClass('class2',{duration:500});
+	});
+	
+	
+	
+	   </script>
+
+  </body>
+</html>
