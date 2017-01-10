@@ -67,7 +67,7 @@ iframe{box-shadow:0px 0px 10px black;}
 #social{font-size:30px;margin-top:0px;height:10%;width:560px;margin-left:30px;margin:0 auto;text-align:center;}
 #social i{margin-left:10px;margin-right:10px;color:white;transition: all 0.8s ease 0s;margin-top:0px;display:block-inline;margin-top:5px;text-shadow:2px 2px 5px black;}
 #social i:hover{color:#ddc726;}
-#yasta{width:315px;height:60px;float:left;margin-left:3px;  margin-top: 15px;}
+#yasta{width:315px;height:60px;float:left;margin-left:3px;margin-top: 15px;display: none;}
 #buttons{
 	width:530px;
 	height:30%;
@@ -133,12 +133,38 @@ font-size:16px;
 
 
 
-#button2,#button3,#button4{margin:10px;margin-top:0;font-family: 'Comfortaa', Bold;font-weight:bold;
-border-radius:3px 3px 3px 3px;
-color:white;
-}
+#button1,#button2,#button3,#button4,#button5{margin:10px;margin-top:0;font-family: 'Comfortaa', Bold;font-weight:bold;border-radius:3px 3px 3px 3px;color:white;position:absolute;left: 37%;font-size: 1.3vw;}
 #button1,#button2,#button3,#button4,#button5{transition:all 0.3s ease;box-shadow:0px 0px 3px gray;}
-#button4{margin-right:0;}
+
+#button2 {
+    left: 36.4%;
+    top: 81.2%;
+}
+#button3 {
+    left: 46.6%;
+    top: 81.2%;
+}
+#button4{
+	margin-right:0;
+	left: 56.6%;
+    top: 81.2%;
+}
+#button6{
+	/* background-image:url(../img/logo.png); */
+	width:130px;
+	height:79px;
+	/* background-size:cover; */
+	margin-top: 4.7vw;
+}
+#button1, #button5 {
+    top: 117.2%;
+}
+#button1{
+	left: 30.5%;
+}
+#button5{
+	left: 58.2%;
+}
 
 #button5:hover{
 
@@ -160,12 +186,14 @@ color:#ddc726;
 
 color:#ddc726;
 }
+
 body{
-	background:url(../img/fondoprincipal.jpg);
+	background: url(../img/Bg/HomeExample.jpg);
 	background-size:cover;
 	vertical-align: middle;
 	background-repeat:no-repeat;
-    background-color:black;
+	background-color:black;
+	padding-bottom: 23%;
 }
 #container{
 	height:60%;
@@ -173,11 +201,11 @@ body{
 body.class3{
   -moz-transition:all 0.8s ease-in-out;
   -webkit-transition:all 0.8s ease-in-out;
-	transition:all 0.8s ease-in-out;
-	background:url(../img/fondoprincipal.jpg);
-	background-size:cover;
-	background-repeat:no-repeat;
-    background-color:black;
+  transition:all 0.8s ease-in-out;
+  background: url(../img/Bg/HomeExample.jpg);
+  background-size:cover;
+  background-repeat:no-repeat;
+  background-color:black;
 }
 body.class1 {
   -moz-transition:all 0.8s ease-in-out;
@@ -198,25 +226,7 @@ body.class2 {
   background-repeat:no-repeat;
   background-color:black;
 }
-#button6{
-	background-image:url(../img/logo.png);
-	width:130px;
-	height:79px;
-	background-size:cover;
-	margin-top:-10px;
-}
-#button1{
-	 margin-top: 15px;
-	float:left;
-}
 
-#button5{
-	    margin-top: 15px;
-	    float:left;
-}
-#button1{
-	margin-left:10px;
-}
 h3{
 	font-family: 'Comfortaa';
 }
