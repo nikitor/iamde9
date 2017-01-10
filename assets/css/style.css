@@ -1,16 +1,19 @@
 a{text-decoration:none;}
 #logo{
 	margin:0 auto;
-	height:75%;
+	max-height: 34.1vw;
 }
 
+/*
 #div1{margin:0 auto;height:100%;background-image:url(../img/pentagono.png);display:none;background-repeat:no-repeat;background-size:contain;background-position: center;}
 #div2{margin:0 auto;height:100%;background-image:url(../img/pentagono2.png);display:none;background-repeat:no-repeat;background-size:contain;background-position: center;}
 #div3{margin:0 auto;height:100%;background-image:url(../img/pentagono.png);display:none;background-repeat:no-repeat;background-size:contain;background-position: center;}
 #div4{margin:0 auto;height:100%;background-image:url(../img/pentagono2.png);display:none;background-repeat:no-repeat;background-size:contain;background-position: center;}
-#div5{margin:0 auto;height:100%;background-image:url(../img/pentagono3.png);display:none;background-repeat:no-repeat;background-size:contain;background-position: center;}
+#div5{margin:0 auto;height:100%;/* background-image:url(../img/pentagono3.png); */display:none;background-repeat:no-repeat;background-size:contain;background-position: center;}
+#div5{margin:0 auto;height:100%;/* background-image:url(../img/pentagono3.png); */display:none;background-repeat:no-repeat;background-size:contain;background-position: center;}
+/*
 #div6{margin:0 auto;height:100%;background-image:url(../img/pentagono2.png);display:none;background-repeat:no-repeat;background-size:contain;background-position: center;}
-
+*/
 
 
 
@@ -191,12 +194,14 @@ color:#ddc726;
 }
 
 body{
+	-moz-transition:all 0.8s ease-in-out;
+	-webkit-transition:all 0.8s ease-in-out;
+	transition:all 0.8s ease-in-out;
 	background: url(../img/Bg/HomeExample.jpg);
 	background-size:cover;
 	vertical-align: middle;
 	background-repeat:no-repeat;
 	background-color:black;
-	/* padding-bottom: 23%; */
 	width: 100%;
 	font-size:16px;
 	height: 73.7vw;
@@ -208,32 +213,22 @@ body a {
 	height:60%;
 }
 body.class3{
-  -moz-transition:all 0.8s ease-in-out;
-  -webkit-transition:all 0.8s ease-in-out;
-  transition:all 0.8s ease-in-out;
-  background: url(../img/Bg/HomeExample.jpg);
-  background-size:cover;
-  background-repeat:no-repeat;
-  background-color:black;
+  /* -moz-transition:all 0.8s ease-in-out; */
+  /* -webkit-transition:all 0.8s ease-in-out; */
+  /* transition:all 0.8s ease-in-out; */
+  background: url(../img/Bg/NightExample.jpg);
+  /* background-size:cover; */
+  /* background-repeat:no-repeat; */
+  /* background-color:black; */
 }
 body.class1 {
-  -moz-transition:all 0.8s ease-in-out;
-  -webkit-transition:all 0.8s ease-in-out;	
-  transition:all 0.8s ease-in-out;
-  background:url(../img/fondo.jpg);
-  background-size:cover;
-  background-repeat:no-repeat;
-  background-color:#812749;
+	background: url(../img/Bg/DayExample.jpg);
+	background-color:#812749;
+	background-repeat: no-repeat;
 }
 
 body.class2 {
-  -moz-transition:all 0.8s ease-in-out;
-  -webkit-transition:all 0.8s ease-in-out;
-  transition:all 0.8s ease-in-out;
-  background:url(../img/fondo2.jpg);
-  background-size:cover;
-  background-repeat:no-repeat;
-  background-color:black;
+	background: url(../img/Bg/NightExample.jpg);
 }
 
 h3{
@@ -243,12 +238,11 @@ h3{
 #div2contenido h3{
 	font-family: 'Comfortaa';
 	color: black;
-	
 }
 
 .botones{
 	margin: 0 auto;
-	/* background-color:green; */
+	background-color:green;
 	/* background-image:url(../img/Bg/botonesCentrales.png);	 */
 	width: 10vw;
 	height: 10vw;
