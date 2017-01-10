@@ -125,29 +125,29 @@ iframe{box-shadow:0px 0px 10px black;}
 
 
 #button1,#button5{font-family: 'Comfortaa', Bold;font-weight:bold;
-border-radius:3px 3px 3px 3px;
-color:white;
-font-size:16px;
+/*border-radius:3px 3px 3px 3px;
+color:white;*/
+/*font-size:16px;*/
 
 }
 
 
 
-#button1,#button2,#button3,#button4,#button5{margin:10px;margin-top:0;font-family: 'Comfortaa', Bold;font-weight:bold;border-radius:3px 3px 3px 3px;color:white;position:absolute;left: 37%;font-size: 1.3vw;}
+#button1,#button2,#button3,#button4,#button5{margin:10px;margin-top:0;font-family: 'Comfortaa', Bold;font-weight:bold;position:absolute;font-size: 1.3vw;}
 #button1,#button2,#button3,#button4,#button5{transition:all 0.3s ease;box-shadow:0px 0px 3px gray;}
-
+#button2,#button3,#button4 {
+ /*  top: 80.5%;	*/
+}
 #button2 {
-    left: 36.4%;
-    top: 81.2%;
+    /*left: 36.4%;*/
 }
 #button3 {
-    left: 46.6%;
-    top: 81.2%;
+    /*left: 46.6%;*/
+
 }
 #button4{
-	margin-right:0;
-	left: 56.6%;
-    top: 81.2%;
+	/*margin-right:0;*/
+	/*left: 56.6%;*/
 }
 #button6{
 	/* background-image:url(../img/logo.png); */
@@ -156,8 +156,12 @@ font-size:16px;
 	/* background-size:cover; */
 	margin-top: 4.7vw;
 }
-#button1, #button5 {
-    top: 117.2%;
+#div1{
+	top: 99.2%;
+	left: 30.5%;
+}
+/*#button1,*/ #button5 {
+    top: 99.2%;
 }
 #button1{
 	left: 30.5%;
@@ -194,6 +198,12 @@ body{
 	background-repeat:no-repeat;
 	background-color:black;
 	padding-bottom: 23%;
+	width: 100%;
+	font-size:16px;
+	/* height: 100%; */
+}
+body a {
+	position:fixed;
 }
 #container{
 	height:60%;
@@ -235,4 +245,30 @@ h3{
 	font-family: 'Comfortaa';
 	color: black;
 	
+}
+
+.botones{
+	margin: 0 auto;
+	background-color:green;
+	background-image:url(../img/Bg/botonesCentrales.png);	
+	width:30%;
+	height: 10%;
+	position: absolute;
+	left: 50%;
+	margin-left: -15%;
+	top: 80%;
+	text-align:left;
+	/* margin-top: 23%; */
+}
+.botones a {
+	color: white;
+	text-decoration: none;
+	padding: 0.5em;
+	font-size: 1.8em;
+}
+
+a.button1{
+	position:absolute;
+	top: 80.2%;
+	left: 36.5%;
 }
