@@ -147,7 +147,8 @@
 	</script>
   <style type="text/css">.fancybox-margin{margin-right:19px;}</style><style type="text/css">.fancybox-margin{margin-right:18px;}</style></head>
 
-  <body onload="mostrarinicio()" data-spy="scroll" data-offset="0" data-target="#theMenu" align="center" >
+  <!-- <body onload="mostrarinicio()" data-spy="scroll" data-offset="0" data-target="#theMenu" align="center" > -->
+  <body data-spy="scroll" data-offset="0" data-target="#theMenu" align="center" >
   	<div class="botones" style="
     z-index: 10;
 ">
@@ -331,7 +332,8 @@
 		 <div id="div4" class="oculto" style="display: none;"><div id="div4contenido"><p>info@iamde9.com</p>
 		 <p><span style="color:#4286f4">David</span> info@darkhood.com</p>
 		 </div></div>
-		 <div id="div5" class="oculto" style="display: none;"><div id="div5contenido"></div></div>
+		 <!-- <div id="div5" class="oculto" style="display: none;"><div id="div5contenido"></div></div> -->
+		 <div id="div5" class="oculto"><div id="div5contenido"></div></div>
 		 <div id="div6" class="oculto" style="display: none;"><div id="div6contenido"><p>Luxury music at its finest... </p>
 
 <p>D€9 blends the north with the south, the smoth with the rough, 
@@ -387,11 +389,14 @@ leaded by sophisticated melodies</p>
 			x=$(document);
 			x.ready(inicializar);
 			
+			$(function(){
+				console.log("secciones ocultas");
+				inicializar();
+				mostrarinicio();
+			});
+			
 			function inicializar ()
 			{
-			
-			
-			
 					$(".oculto").hide();              
 					$(".mo").click(function(){
 						var nodo = $(this).attr("href");  
@@ -399,10 +404,7 @@ leaded by sophisticated melodies</p>
 						$(nodo).show();
 						return false;
 					});
-        
-
             }
-			
             
 	function mostrarinicio()
 			{var x;

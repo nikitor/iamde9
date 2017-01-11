@@ -260,7 +260,7 @@ body.photos {
 	/* background: url(../img/Bg/PhotosExample.jpg); */
 	background: url(../img/Bg/NightExample.jpg);
 	background-color:black;
-	background-size:cover;
+	background-size: 105.3vw 77.5vw;
 	background-repeat:no-repeat;
 }
 body.class2 {
