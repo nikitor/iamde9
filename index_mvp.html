@@ -156,6 +156,7 @@
 		<a href="#div2" class="mo" id="button3">MUSIC</a>
 		<a href="#div3" class="mo" id="button4">VIDEOS</a>
 		<a href="#div4" class="mo" id="button5">CONTACT</a>
+		<a href="#div6" class="mo" id="button6"></a>
 		<div class="soc">
 			<a target="blank_" href="https://www.instagram.com/de9thelovebeast/"></a>
 			<a target="blank_" href="https://www.facebook.com/iamde9"></a>
@@ -170,6 +171,7 @@
 		 <div id="div1" class="oculto">
 			
 			<div id="div1contenido">
+			<!--
 				<a class="single-image" href="assets/img/Photos/a.jpg" title="Home sweet home"><img src="assets/img/Photos/thumbnails/a.jpg" alt=""/></a>
 				<a class="single-image" href="assets/img/Photos/b.jpg" title="Portraits through melodies"><img src="assets/img/Photos/thumbnails/b.jpg" alt=""/></a>
 				<a class="single-image" href="assets/img/Photos/c.jpg" title="Still winter"><img src="assets/img/Photos/thumbnails/c.jpg" alt=""/></a>
@@ -192,7 +194,7 @@
 				<a class="single-image" href="assets/img/Photos/t.jpg" title="#Water"><img src="assets/img/Photos/thumbnails/t.jpg" alt=""/></a>
 				<a class="single-image" href="assets/img/Photos/u.jpg" title="Place Of Birth"><img src="assets/img/Photos/thumbnails/u.jpg" alt=""/></a>
 				<a class="single-image" href="assets/img/Photos/v.jpg" title="from D€9 to #You"><img src="assets/img/Photos/thumbnails/v.jpg" alt=""/></a>
-			
+			-->
 			
 			</div>	
 				
@@ -205,13 +207,19 @@
 		 
 		 <!-- fixme -->
 		 <!-- <iframe width="70%"  src="https://www.youtube.com/embed/videoseries?list=PL0Q9uce94yJh-AOT0v2U7594RNPJcJTOX" frameborder="0" allowfullscreen></iframe> -->
+		 <h3>Music playlist</h3>
+		 <iframe width="70%"  src="https://www.youtube.com/embed/videoseries?list=PL0Q9uce94yJh-AOT0v2U7594RNPJcJTOX" frameborder="0" allowfullscreen></iframe>
 		 
 		 
 		 
 		 
 		 </div></div>
 		 <!-- fixme -->
-		 <div id="div3" class="oculto"><div id="div3contenido"></div></div>
+		 <div id="div3" class="oculto">
+		 <div id="div3contenido">
+		 <h3>Video playlist</h3>
+		 <iframe width="70%"  src="https://www.youtube.com/embed/videoseries?list=PL0Q9uce94yJgxjDv54FD-_8Y2mpOeVE_R" frameborder="0" allowfullscreen></iframe>
+		 </div></div>		 
 		 <!-- <div id="div3" class="oculto"><div id="div3contenido"><iframe width="70%"  src="https://www.youtube.com/embed/videoseries?list=PL0Q9uce94yJgxjDv54FD-_8Y2mpOeVE_R" frameborder="0" allowfullscreen></iframe></div></div> -->
 		 <div id="div4" class="oculto"><div id="div4contenido"><p>info@iamde9.com</p>
 		 <p><span style="color:#4286f4">David</span> info@darkhood.com</p>
@@ -297,11 +305,12 @@ leaded by sophisticated melodies</p>
 	$("#button1").click(function() {
 	$('body').removeClass();
 	/*$('body').addClass('class3',{duration:500});*/
+	/*$('body').addClass('class1',{duration:500});*/
 	});
 	/* photos */
 	$("#button2").click(function() {
 	$('body').removeClass();
-	$('body').addClass('class2',{duration:500});
+	$('body').addClass('photos',{duration:500});
 	});
 	
 	$("#button3").click(function() {
@@ -325,7 +334,7 @@ leaded by sophisticated melodies</p>
 	});
 	$("#button6").click(function() {
 	$('body').removeClass();
-	$('body').addClass('class2',{duration:500});
+	$('body').addClass('class1',{duration:500});
 	});
 	
 	
