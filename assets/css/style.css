@@ -340,3 +340,24 @@ body.class2 {
 	width:30vw;
 	margin-left: -1.7vw;
 }
+.contenedorFotos{
+	/* margin: 0 auto; */
+	top: -5.5vw;
+	left: 1.25vw;
+	position: relative;
+	width: 33vw;
+}
+.contenedorFotos img {
+	width: 32.0vw;
+}
+
+.contenedorFotos a {
+	position: absolute;
+	display:block;
+	width:5vw;
+	height:5vw;
+	/* top:-32vw; */
+	/* background-color:red; */
+	/* opacity: 0.5; */
+}
+
