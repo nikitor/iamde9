@@ -54,95 +54,6 @@
 	<script type="text/javascript" src="fancybox/source/helpers/jquery.fancybox-thumbs.js?v=1.0.7"></script>
  	<script>
 	
-		$(function(){
-		
-			$(".single-image").fancybox({
-				openEffect : 'elastic',  
-		    	closeEffect	: 'elastic',
-		    	openSpeed:'normal', 
-		    	closeSpeed:'normal',
-		    	helpers : {
-		    		title : {
-		    			type : 'inside' 
-		    		},
-		    		overlay : {
-		    			closeClick : true 
-       			    }
-		    	},
-		    	padding:11
-		    	
-			});
-			
-			$(".gallery-image").fancybox({
-				openEffect : 'fade', 
-		    	closeEffect	: 'fade',
-		    	closeBtn: false,
-		    	helpers : {
-		    		title : {
-		    			type : 'over' 
-		    		},
-		    		thumbs : {
-			            width: 50
-			        },
-			        buttons	: {},
-			        overlay : {
-			            css : {
-			                'background' : 'rgba(0,0,0,0.5)'
-			            }
-        			}
-					
-		    	}
-		    			    	
-			});
-			
-			
-			$(".fancyOther").fancybox({
-				width		: '70%',
-				height		: '70%',
-				maxWidth	: 1440,
-				maxHeight	: 1080,
-				fitToView	: false,
-				autoSize	: false,
-				closeClick	: false,
-				openEffect	: 'none',
-				closeEffect	: 'none'
-			});
-			
-			
-			$(".fancyOther2").click(function(){
-				$.fancybox( '<div><h1>Lorem Lipsum</h1><p>Lorem lipsum</p></div>', {
-   					 title : 'Custom Title',
-   					 width		: '70%',
-					height		: '70%',
-					maxWidth	: 1440,
-					maxHeight	: 1080,
-					fitToView	: false,
-					autoSize	: false,
-					closeClick	: false	 
-				});
-			});
-			
-			
-			$(".fancyMedia").fancybox({	
-				helpers : {
-					media : {}
-				}
-			});
-			
-			$(".fancyMediaMapa").fancybox({	
-				helpers : {
-					media : {}
-				},
-				 width		: '100%',
-				height		: '100%'
-				
-			});
-
-			
-			
-		
-			
-		});
 		
 	</script>
   <style type="text/css">.fancybox-margin{margin-right:19px;}</style><style type="text/css">.fancybox-margin{margin-right:18px;}</style></head>
@@ -385,26 +296,111 @@ leaded by sophisticated melodies</p>
 
     <script>
 
-    var x;
-			x=$(document);
-			x.ready(inicializar);
+			<!-- var x; -->
+			<!-- x=$(document); -->
+			<!-- x.ready(inicializar); -->
 			
-			$(function(){
-				console.log("secciones ocultas");
-				inicializar();
-				mostrarinicio();
+	<!-- on document ready -->
+	$(function(){
+		console.log("inicializar botones del menú, ocultar secciones y mostrar la inicial");
+		inicializar();
+		mostrarinicio();
+
+		<!-- inicializar fancybox -->
+		
+		$(".single-image").fancybox({
+			openEffect : 'elastic',  
+			closeEffect	: 'elastic',
+			openSpeed:'normal', 
+			closeSpeed:'normal',
+			helpers : {
+				title : {
+					type : 'inside' 
+				},
+				overlay : {
+					closeClick : true 
+				}
+			},
+			padding:11
+			
+		});
+		
+		$(".gallery-image").fancybox({
+			openEffect : 'fade', 
+			closeEffect	: 'fade',
+			closeBtn: false,
+			helpers : {
+				title : {
+					type : 'over' 
+				},
+				thumbs : {
+					width: 50
+				},
+				buttons	: {},
+				overlay : {
+					css : {
+						'background' : 'rgba(0,0,0,0.5)'
+					}
+				}
+				
+			}
+							
+		});
+		
+		
+		$(".fancyOther").fancybox({
+			width		: '70%',
+			height		: '70%',
+			maxWidth	: 1440,
+			maxHeight	: 1080,
+			fitToView	: false,
+			autoSize	: false,
+			closeClick	: false,
+			openEffect	: 'none',
+			closeEffect	: 'none'
+		});
+		
+		
+		$(".fancyOther2").click(function(){
+			$.fancybox( '<div><h1>Lorem Lipsum</h1><p>Lorem lipsum</p></div>', {
+				 title : 'Custom Title',
+				 width		: '70%',
+				height		: '70%',
+				maxWidth	: 1440,
+				maxHeight	: 1080,
+				fitToView	: false,
+				autoSize	: false,
+				closeClick	: false	 
 			});
+		});
+		
+		
+		$(".fancyMedia").fancybox({
+			helpers : {
+				media : {}
+			}
+		});
+		
+		$(".fancyMediaMapa").fancybox({
+			helpers : {
+				media : {}
+			},
+			 width		: '100%',
+			height		: '100%'
 			
-			function inicializar ()
-			{
-					$(".oculto").hide();              
-					$(".mo").click(function(){
-						var nodo = $(this).attr("href");  
-						$(".oculto").hide();                             
-						$(nodo).show();
-						return false;
-					});
-            }
+		});	
+	});
+	
+	function inicializar ()
+	{
+			$(".oculto").hide();              
+			$(".mo").click(function(){
+				var nodo = $(this).attr("href");  
+				$(".oculto").hide();                             
+				$(nodo).show();
+				return false;
+			});
+	}
             
 	function mostrarinicio()
 			{var x;
