@@ -32,12 +32,13 @@ a{text-decoration:none;}
 #div2contenido, #div3contenido {
 	width: 30vw;
 	margin: 0 auto;
-	margin-top: 4%;
+	/* margin-top: 4%; */
 	padding-left: 2vw;
-	padding-top: 10vw;
-	padding-bottom: 11vw;
-	position: relative;
-	left: 0vw;
+	padding-top: 13vw;
+	/* padding-bottom: 11vw; */
+	/* position: relative; */
+	/* left: 35vw; */
+	text-align:center;
 	}
 /*
 #div3contenido{width: 30%;
@@ -245,7 +246,8 @@ body{
 	background-color:black;
 	width: 100%;
 	font-size:16px;
-	height: 73.7vw;
+	height: 73.802vw;
+	overflow-y:hidden;
 }
 body a {
 	position: relative;
@@ -298,7 +300,7 @@ body.class2 {
 	position: absolute;
 	left: 50.255vw;
 	margin-left: -5vw;
-	top: 40vw;
+	top: 40.075vw;
 	text-align:left;
 	/* margin-top: 23%; */
 }
@@ -338,7 +340,7 @@ body.class2 {
 	height: 2.5vw;
 	display: block;
 	/* background-color: red; */
-	margin-right: 1.4vw;
+	margin-right: 1.2vw;
 }
 
 .soc a {
@@ -347,7 +349,8 @@ body.class2 {
 
 .soc {
 	width:30vw;
-	margin-left: -1.7vw;
+	margin-left: -4.05vw;
+	margin-top: -2.8vw;
 }
 .contenedorFotos{
 	/* margin: 0 auto; */
@@ -371,4 +374,8 @@ body.class2 {
 	/* top:-32vw; */
 	/* background-color:red; */
 	/* opacity: 0.5; */
+}
+ #div2contenido iframe, #div3contenido iframe {
+	width:66%;
+	height:33%;
 }
