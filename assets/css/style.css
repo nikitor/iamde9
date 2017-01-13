@@ -239,8 +239,8 @@ body{
 	width: 100%;
 	font-size:16px;
 	height: 73.7vw;
-	max-width:1930px;
-	max-height:1416px;
+	/* max-width:1930px; */
+	/* max-height:1416px; */
 	/* overflow-y:hidden; */
 }
 body a {
