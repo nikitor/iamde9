@@ -256,12 +256,12 @@ body.class2 {
     margin: 0 auto;
     /* background-color: green; */
     /* background-image: url(../img/Bg/botonesCentrales.png); */
-    width: 50%;
+    width: 60%;
     height: 10%;
     position: absolute;
-    left: 50%;
+    left: 47%;
     margin-left: -25%;
-    top: 68.4%;
+    top: 69.9%;
     text-align: left;
     /* margin-top: 23%; */
     text-align: center;
@@ -277,16 +277,16 @@ body.class2 {
 .botones .soc a {
     position: relative;
     float: left;
-    width: 2.5vw;
-    height: 2.5vw;
+    width: 5.5%;
+    height: 30.5%;
     display: block;
     /* background-color: red; */
     background-color: rgba(255,150,0,0.5);
-    margin-right: 3.4%;
+    margin-right: 3.5%;
 }
 
 .soc a {
-	top: 14.1vw;
+	top: 14.1%;
 }
 
 .soc {
