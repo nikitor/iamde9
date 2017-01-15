@@ -467,7 +467,7 @@
             $("#button4").click(function() {
                 $('body').removeClass();
                 $('body').addClass('video', {
-                    duration: 500
+                    duration: 2000
                 });
             });
 
@@ -492,29 +492,29 @@
             });
 			
 			
-			var hoveredBodyClass="";
+			<!-- var hoveredBodyClass=""; -->
 			
-			$(".luces").mouseover(function() {
+			<!-- $(".luces").mouseover(function() { -->
 				
-                <!-- if(hoveredBodyClass!="") return; -->
-				hoveredBodyClass = $("body").attr("class");
-				console.log("mouseover body" + hoveredBodyClass);
-				if(typeof(hoveredBodyClass)=="undefined") return;
-				//var baseBodyClass = $("body").attr("class");
-				$('body').removeClass();
-                $('body').addClass(hoveredBodyClass+'fx', {
-						duration: 200
-				});
-			});				
-			$(".luces").mouseout(function() {
-				if(hoveredBodyClass!==""&&typeof(hoveredBodyClass)!="undefined"){
-					$('body').removeClass();
-					$('body').addClass(hoveredBodyClass, {
-						duration: 100
-					});
-					hoveredBodyClass="";
-				}}
-			);
+                <!-- <!-- if(hoveredBodyClass!="") return; --> -->
+				<!-- hoveredBodyClass = $("body").attr("class"); -->
+				<!-- console.log("mouseover body" + hoveredBodyClass); -->
+				<!-- if(typeof(hoveredBodyClass)=="undefined") return; -->
+				<!-- //var baseBodyClass = $("body").attr("class"); -->
+				<!-- $('body').removeClass(); -->
+                <!-- $('body').addClass(hoveredBodyClass+'fx', { -->
+						<!-- duration: 200 -->
+				<!-- }); -->
+			<!-- });				 -->
+			<!-- $(".luces").mouseout(function() { -->
+				<!-- if(hoveredBodyClass!==""&&typeof(hoveredBodyClass)!="undefined"){ -->
+					<!-- $('body').removeClass(); -->
+					<!-- $('body').addClass(hoveredBodyClass, { -->
+						<!-- duration: 100 -->
+					<!-- }); -->
+					<!-- hoveredBodyClass=""; -->
+				<!-- }} -->
+			<!-- ); -->
         </script>
         <!-- <script type="text/javascript" src="asset/prefijos/prefixfree.min.js"></script>	 -->
         <!--<script type="text/javascript" src="assets/js/prefixfree.min.js"></script>	-->
