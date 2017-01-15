@@ -463,14 +463,12 @@ a.linkdownty{
 body .fondo{
 	width:100%;
 	max-height: 73.7%;
-	/* padding-bottom: 73.7%; */
-	padding-bottom: 56.25%;
+	padding-bottom: 73.7%;
 	/* background: url(../img/Bg/Homeex.jpg); */
-	/* background-image: url(../img/Bg/HomeExample.jpg); */
-	background-image: url(../img/small/home.jpg);
+	background-image: url(../img/Bg/HomeExample.jpg);
 	position: relative;
 	/* background-size: 100% 73.8%; */
-	background-size: 100% 56.25%;
+	background-size: 100%;
 	background-blend-mode: multiply;
 	background-repeat: no-repeat;
 	top: 0;
@@ -480,24 +478,24 @@ body .fondo{
 }
 
 body.bio .fondo{
-	background-image: url(../img/Bg/small/bio.jpg);
+	background-image: url(../img/Bg/bio.jpg);
 }
 body.biofx .fondo{
-	background-image: url(../img/Bg/small/biofx.jpg);
+	background-image: url(../img/Bg/biofx.jpg);
 		padding-bottom: 56.25%;
 }
 body.contact .fondo{
-	background-image: url(../img/Bg/small/contact.jpg);
+	background-image: url(../img/Bg/contact.jpg);
 }
 body.contactfx .fondo{
-	background-image: url(../img/Bg/small/contactfx.jpg);
+	background-image: url(../img/Bg/contactfx.jpg);
 	padding-bottom: 56.25%;
 }
 body.music .fondo{
-	background-image: url(../img/Bg/small/music.jpg);
+	background-image: url(../img/Bg/music.jpg);
 }
 body.musicfx .fondo{
-	background-image: url(../img/Bg/small/musicfx.jpg);
+	background-image: url(../img/Bg/musicfx.jpg);
 	padding-bottom: 56.25%;
 }
 body.musicfx .luces{
@@ -506,21 +504,21 @@ body.musicfx .luces{
 	margin-bottom: -20%;
 }
 body.photos .fondo {
-	background-image: url(../img/Bg/small/photos.jpg);
+	background-image: url(../img/Bg/photos.jpg);
 }
 body.photos .fondo .luces {
 	display:none;
 }
 	
 body.photosfx .fondo {
-	background-image: url(../img/Bg/small/photosfx.jpg);
+	background-image: url(../img/Bg/photosfx.jpg);
 	padding-bottom: 56.25%;
 }
 body.video .fondo{
-	background-image: url(../img/Bg/small/video.jpg);
+	background-image: url(../img/Bg/video.jpg);
 }
 body.videofx .fondo {
-	background-image: url(../img/Bg/small/videofx.jpg);
+	background-image: url(../img/Bg/videofx.jpg);
 	/* padding-bottom: 56.25%; */
 }
 
@@ -639,5 +637,4 @@ body{
 		position: relative;
 		left: -7%;
 	}	
-
 }
