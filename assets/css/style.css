@@ -603,6 +603,7 @@ body{
 	display:none;
 }
 
+
 .lnkout{
     width: 56%;
     height: 82%;
@@ -612,6 +613,22 @@ body{
     position: absolute;
     /* background-color: blue; */
     /* opacity: 0.5; */
+}
+body.video .lnkout{
+    width: 103.5%;
+    height: 194%;
+    left: 23%;
+    margin-left: -20%;
+    top: 40%;
+    position: absolute;
+    /* background-color: blue; */
+    /* opacity: 0.5; */
+}
+
+body.video .lnkout:hover{
+    background-image: url(../img/Bg/videofx_pentagono.png);
+    background-position: 50% 50%;
+	background-size: 100.2% 100.2%;	
 }
 	
 @media (max-width:991px){
@@ -654,16 +671,6 @@ body{
 		height: 44%;
 		position: absolute;
 	}
-	.lnkout {
-		width: 142%;
-		height: 84%;
-		left: 12%;
-		margin-left: -20%;
-		top: 63%;
-		position: absolute;
-		/* background-color: blue; */
-		/* opacity: 0.5; */
-	}
 	a.linkdownty{
 		display: block;
 		position: absolute;
@@ -699,5 +706,23 @@ body{
 		/* top:0; */
 	/* } */
 	
+	body.video .lnkout{
+		width: 243.5%;
+		height: 146.7%;
+		left: -37.5%;
+		margin-left: -20%;
+		top: 30.1%;
+		position: absolute;
+		background-position: 50% 50%;
+		background-repeat: no-repeat;
+		background-size: 100% 100%;
+	}
+	
+	body.video .lnkout:hover{
+		/* background-image: url(../img/Bg/videofx_pentagono.png); */
+		background-position: 50% 50%;
+		background-size: 101.1% 100.3%;
+		top: 30.2%;
+	}	
 
 }
