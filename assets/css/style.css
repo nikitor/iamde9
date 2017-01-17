@@ -551,7 +551,7 @@ body .fondo{
 	/* height: 100%; */
 }
 
-body.home {
+body.home .fondo{
 	background-image: url(../img/Bg/small/home.jpg);
 }
 
