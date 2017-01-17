@@ -285,7 +285,7 @@ body.class2 {
 .botones {
     /* margin: 0 auto; */
     /* background-color: cyan; */
-    opacity: 0.5;
+    /* opacity: 0.5; */
     /* background-image: url(../img/Bg/botonesCentrales.png); */
     width: 36.7%;
     height: 21.5%;
@@ -328,9 +328,13 @@ body.class2 {
     width: 46.2%;
     z-index: 900;
     height: 19.2%;
-    top: 80.5%;
-    position: relative;
-    right: 4.9%;
+	(;height: 19.7%;);	/* Safari =<7 */
+    /* top: 80.5%; */
+    bottom: 0%;
+    position: absolute;
+	right: 26.6%;
+    /* right: 4.9%; */
+	/* background-color: red; */
 }
 .contenedorFotos{
     top: 38%;
@@ -360,90 +364,85 @@ body.class2 {
 /* } */
 
 .lnk {
-    width: 23.1%;
-    height: 18.9%;
+    /* width: 22.1%;	/* button1, button5 */ */
+    /* height: 18.9%; */
     display: block;
     position: absolute;
     /* background-color: rgba(255,0,0,0.99); */
     z-index: 10;
-}
-
-#button1,#button2,#button3,#button4,#button5,#button6{
+    background-image: url(../img/Bg/btns_night_.png);
+    background-size: 444.3%;    
 	transition:all 0.3s ease;
 	background-repeat: no-repeat;
 }
 
+.lnk:hover {
+	background-image: none;
+}
 
-/* #button1,#button5,#button6 { */
-#button1,#button5,#button6, #button2,#button3,#button4 {
-    /* background-image: url(../img/Bg/btns_night.jpg); */
-    background-image: url(../img/Bg/btns_night_.png);
-    background-size: 340%;    
+#button1,#button2,#button3,#button4,#button5,#button6{
+    /* background-image: url(../img/Bg/btns_night_.png); */
+    /* background-size: 444.3%;     */
 }
 
 #button2,#button3,#button4 {
-    top: 0%;
-    width: 22.5%;
-    /* background-image: url(../img/Bg/btns234.jpg); */
-    /* background-size: 340%; */
-}
-
-#button1:hover {
-	background-image: none;
-}
-#button2:hover {
-	background-image: none;
-}
-#button3:hover {
-	background-image: none;
-}
-#button4:hover {
-    background-image: none;
-}
-#button5:hover {
-    background-image: none;
-}
-#button6:hover {
-    background-image: none;
-}
-
-lnk:hover {
-	background-image: none;
-}
-#button2 {
-    left: 11.7%;
-    background-position: 15.4% 3.9%;
-    background-size: 449%;
-}
-#button3 {
-    left: 39.1%;
-    /* height: 19.4%; */
-    background-position: 50.3% 3.9%;
-    background-size: 449%;
-}
-#button4{
-    left: 66.8%;
-    background-position: 85.5% 3.9%;
-    background-size: 449%;
+    width: 22.4%;
+    height: 19.1%;
+    top: -0.5%;
+	background-size: 444.3%;
 }
 
 #button1, #button5 {
     bottom: 0%;
-    height: 19.9%	
+    height: 22.1%;
+    width: 22.8%;
+    top: 79%;
+    /* background-size: 444.3%; */
+}
+
+/* #button1:hover { */
+	/* background-image: none; */
+/* } */
+/* #button2:hover { */
+	/* background-image: none; */
+/* } */
+/* #button3:hover { */
+	/* background-image: none; */
+/* } */
+/* #button4:hover { */
+    /* background-image: none; */
+/* } */
+/* #button5:hover { */
+    /* background-image: none; */
+/* } */
+/* #button6:hover { */
+    /* background-image: none; */
+/* } */
+
+#button2 {
+    left: 11.7%;
+    background-position: 15.2% 3.2%;
+    background-size: 450%;
+}
+#button3 {
+    left: 39.1%;
+    /* height: 19.4%; */
+    background-position: 50.21% 3.2%;
+    /* background-size: 449%; */
+}
+#button4{
+    left: 66.8%;
+    background-position: 85.6% 3.2%;
+    /* background-size: 449%; */
 }
 
 #button1{
     left: 0%;
-    background-position: 0.6% 99.718%;
-    background-size: 444.3%;
-    width: 22.8%;
-    top: 79%;
-    height: 22.1%;
+    background-position: 0.7% 99.818%;
 }
 #button5{
     right: 0%;
-    background-position: 99.085% 99%;
-    background-size: 438% 520.8%;
+    background-position: 99% 99.818%;	
 }
 
 #button6 {
@@ -451,7 +450,7 @@ lnk:hover {
     left: 38.2%;
     width: 24.7%;
     height: 39%;
-    background-position: 50.6% 52.1%;
+    background-position: 50.7% 53.1%;
     background-size: 410% 270%;
 }
 
@@ -472,11 +471,12 @@ lnk:hover {
     width: 13%;
     margin-left: 9.5%;
 }
+
 .soc a.yt{
     background-size: 1652% 531%;
     background-position: 50.6% 98.5%;
     width: 13%;
-    margin-left: 9%
+    margin-left: 9%;
 }
 .soc a.sc{
     background-size: 1710% 531%;
@@ -491,6 +491,19 @@ lnk:hover {
     width: 13.5%;
 }
 	
+.soc a.fb  {
+	(;margin-left: 9.7%;);	/* Safari =<7 */
+}
+.soc a.yt {	
+	(;margin-left: 9.7%;);	/* Safari =<7 */
+}
+.soc a.sc{
+	(;margin-left: 9%;);	/* Safari =<7 */	
+}
+.soc a.tw {
+    (;margin-left: 8%;);		/* Safari =<7 */	
+}
+
 .dummy{
 	height:50%;
 	width:100%;
@@ -532,7 +545,7 @@ body .fondo{
 	background-repeat: no-repeat;
 	top: 0;
 	left: 0;
-	height: 100%;
+	/* height: 100%; */
 }
 
 body.bio .fondo{
@@ -614,22 +627,26 @@ body{
     /* background-color: blue; */
     /* opacity: 0.5; */
 }
-body.video .lnkout{
+body.video .lnkout, body.music .lnkout{
     width: 103.5%;
     height: 194%;
     left: 23%;
     margin-left: -20%;
     top: 40%;
-    position: absolute;
+    /* position: absolute; */
     /* background-color: blue; */
-    /* opacity: 0.5; */
+    opacity: 0.5;
+    background-position: 50% 50%;
+    background-size: 100%;
 }
 
 body.video .lnkout:hover{
     background-image: url(../img/Bg/videofx_pentagono.png);
-    background-position: 50% 50%;
-	background-size: 100.2% 100.2%;	
 }
+
+/* body.music .lnkout:hover{ */
+    /* background-image: url(../img/Bg/musicfx_pentagono.png); */
+/* } */
 	
 @media (max-width:991px){
 /* @media (max-width:767px){ */
@@ -706,23 +723,42 @@ body.video .lnkout:hover{
 		/* top:0; */
 	/* } */
 	
-	body.video .lnkout{
-		width: 243.5%;
-		height: 146.7%;
-		left: -37.5%;
+	body.video .lnkout, body.music .lnkout{
+		width: 143.5%;
+		height: 58.8%;
+		left: 12.5%;
 		margin-left: -20%;
-		top: 30.1%;
+		top: 88.8%;
+	}
+	
+	body.video .lnkout:hover{
 		position: absolute;
+		width: 245.5%;
+		height: 147.1%;
+		left: -38%;
+		margin-left: -20%;
+		top: 29.9%;
 		background-position: 50% 50%;
 		background-repeat: no-repeat;
 		background-size: 100% 100%;
 	}
-	
-	body.video .lnkout:hover{
-		/* background-image: url(../img/Bg/videofx_pentagono.png); */
-		background-position: 50% 50%;
-		background-size: 101.1% 100.3%;
-		top: 30.2%;
-	}	
-
+	#button2 {
+		background-position: 15.4% 3.4%;
+	}
+	#button3 {
+		background-position: 50.3% 3.4%;
+	}
+	#button4{
+		background-position: 85.6% 3.4%;
+	}
+	/* #button5{ */
+		/* background-position: 99.2% 99.718%;	} */
+	#button6{
+		background-position: 50.7% 53.1%;
+	}
+	    /* background-size: 444.3%; */
+		
+	#button2, #button3, #button4 {
+		background-size: 450.3% 557.3%;
+	}
 }
