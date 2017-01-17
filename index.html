@@ -66,7 +66,7 @@
     </style>
 <style type="text/css">.fancybox-margin{margin-right:19px;}</style><style type="text/css">.fancybox-margin{margin-right:0px;}</style><style type="text/css">.fancybox-margin{margin-right:17px;}</style></head>
 
-<body onload="mostrarinicio()" data-spy="scroll" data-offset="0" data-target="#theMenu" align="center">
+<body onload="mostrarinicio()" data-spy="scroll" data-offset="0" data-target="#theMenu" align="center" class="home">
 
 
 	
@@ -339,7 +339,9 @@
 
             <!-- on document ready -->
             $(function() {
-                console.log("inicializar botones del menú, ocultar secciones y mostrar la inicial");
+                var velocidadCambios=500;
+				
+				console.log("inicializar botones del menú, ocultar secciones y mostrar la inicial");
                 inicializar();
                 mostrarinicio();
 
@@ -445,7 +447,11 @@
             }
             /* home */
             $("#button1").click(function() {
-                $('body').removeClass();
+                <!-- $('body').removeClass({ -->
+				$('body').removeClass();
+				$('body').addClass('home', {
+                    duration: 500
+                });
                 /*$('body').addClass('class3',{duration:500});*/
                 /*$('body').addClass('class1',{duration:500});*/
             });
