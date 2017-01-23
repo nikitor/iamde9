@@ -709,11 +709,16 @@ body.video .lnkout:hover{
     background-image: url(../img/Bg/videofx_pentagono.png);
 }
 
-/* body.music .lnkout:hover{ */
-    /* background-image: url(../img/Bg/musicfx_pentagono.png); */
-/* } */
+body.music .lnkout:hover{
+    background-image: url(../img/Bg/musicfx_pentagono.png);
+}
 	
+/* @media (max-width:480px){ */ /*fixme dlya izobrazhenia sayta na sotovom v gorizontalnoy pozicii */
+/* @media (max-width:768px){ */
 @media (max-width:991px){
+	body{
+		overflow-x:hidden;
+	}
 	body .fondo{
 		/* background-size: 259%; */
 		/* background-position: 50%; */
@@ -723,6 +728,7 @@ body.video .lnkout:hover{
 		padding-bottom: 176.143%;
 		left: 0%;
 		width: 100%;
+		overflow-x: hidden;
 	}
 	
 	.luces{
@@ -845,7 +851,7 @@ body.video .lnkout:hover{
 		top: 88.8%;
 	}
 	
-	body.video .lnkout:hover{
+	body.video .lnkout:hover, body.music .lnkout:hover{
 		position: absolute;
 		width: 245.5%;
 		height: 147.1%;
