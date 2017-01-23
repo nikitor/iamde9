@@ -715,7 +715,8 @@ body.music .lnkout:hover{
 	
 /* @media (max-width:480px){ */ /*fixme dlya izobrazhenia sayta na sotovom v gorizontalnoy pozicii */
 /* @media (max-width:768px){ */
-@media (max-width:991px){
+/* @media (max-width:991px){ */
+@media (max-width:480px){
 	body{
 		overflow-x:hidden;
 	}
