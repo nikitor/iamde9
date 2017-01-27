@@ -683,39 +683,156 @@ body{
 
 
 .lnkout{
-    width: 56%;
-    height: 82%;
-    left: 47%;
-    margin-left: -20%;
-    top: 118%;
-    position: absolute;
+    /* width: 56%; */
+    /* height: 82%; */
+    /* left: 47%; */
+    /* margin-left: -20%; */
+    /* top: 118%; */
+    /* position: absolute; */
     /* background-color: blue; */
     /* opacity: 0.5; */
 }
-body.video .lnkout, body.music .lnkout{
-    width: 103.5%;
-    height: 194%;
-    left: 23%;
-    margin-left: -20%;
-    top: 40%;
+body.video .lnkout{
+	/* funcionando en estrecho */
+	/* width: 103.4%; */
+    /* height: 199.1%; */
+    /* left: 23%; */
+    /* margin-left: -20%; */
+    /* top: 37.1%; */
+    /* opacity: 0.5; */
+    /* background-position: 50% 50%; */
+    /* background-size: 100%; */
+	/* /funcionando en estrecho */	
+
+    /* width: 56.5%; */
+    /* height: 65%; */
+    /* left: 46%; */
+    /* margin-left: -20%; */
+    /* top: 121.9%; */
     /* position: absolute; */
     /* background-color: blue; */
-    opacity: 0.5;
-    background-position: 50% 50%;
-    background-size: 100%;
+    /* opacity: 0.5; */
+    /* background-position: 50% 50%; */
+    /* background-size: 100%; */
 }
 
-body.video .lnkout:hover{
-    background-image: url(../img/Bg/videofx_pentagono.png);
+body.music .lnkout{
+    /* width: 54%; */
+    /* height: 61.3%; */
+    /* left: 48.1%; */
+    /* margin-left: -20%; */
+    /* top: 134%; */
+    /* position: absolute; */
+    /* background-color: blue; */
+    /* opacity: 0.5; */
+    /* background-position: 50% 50%; */
+    /* background-size: 100%; */
 }
 
-body.music .lnkout:hover{
-    background-image: url(../img/Bg/musicfx_pentagono.png);
+.lnkoutHover {
+	background-repeat: no-repeat !important;
+}
+
+body.music .lnkout:hover, body.video .lnkout:hover {
+	z-index: 10;
+}
+
+body.video .lnkout:hover  + .lnkoutHover {
+    /* background-image: url(../img/Bg/videofx_pentagono.png); */
+    /* width: 103.2%; */
+    /* height: 194%; */
+    /* left: 3%; */
+    /* top: 39.6%; */
+    /* position: absolute; */
+    /* background-color: blue; */
+    /* opacity: 0.5; */
+    /* background-position: 49.8% 50%; */
+    /* background-size: 100.9% 100%; */
+    /* background-repeat: no-repeat; */
+}
+
+a.lnko {
+    position: absolute;
+	z-index: 500;
+    /* background-color: blue; */
+    /* opacity: 0.5; */
+    left: 43.3%;    
+    width: 16.3%;
+}
+
+body .fondo a.lnko{
+	display:none;
+}
+
+body.music .lnko.music {
+    height: 18.5%;
+    top: 40%;
+	display:block;
+}
+
+
+body.video .lnko.video {
+    height: 19.3%;
+    top: 36.5%;
+	display:block;	
+}
+
+body .fondo .pentafx {
+    position: absolute;
+    left: 35.66%;
+    top: 11.65926%;
+    width: 31.419%;
+    height: 58.611%;
+    background-size: 100% 100%;
+    background-position: 50%;
+    /* opacity: 0.1; */
+    /* background-color: green; */
+}
+
+body.video .fondo a.lnko:hover + .pentafx {
+    background-image: url(../img/Bg/b/video_pentagono_fx.png);
 }
 	
-/* @media (max-width:480px){ */ /*fixme dlya izobrazhenia sayta na sotovom v gorizontalnoy pozicii */
-/* @media (max-width:768px){ */
-/* @media (max-width:991px){ */
+body.music .fondo a.lnko:hover + .pentafx {
+    background-image: url(../img/Bg/b/music_pentagono_fx.png);
+    /* position: absolute; */
+    /* left: 35.65%; */
+    /* top: 11.55926%; */
+    /* width: 31.48%; */
+    /* height: 58.811%; */
+    /* opacity: 0.1; */
+    /* background-color: green; */
+    /* display: none; */
+    /* background-size: 100% 100%; */
+    /* background-position: 50% 50%; */
+}
+	
+body.music .lnkout:hover + .lnkoutHover {
+    /* background-image: url(../img/Bg/musicfx_pentagono_2.png); */
+    /* background-image: url(../img/Bg/b/music_pentagono_fx.png); */
+    /* width: 104.96%; */
+    /* height: 196%; */
+    /* left: 2.1%; */
+    /* top: 38.6%; */
+    /* position: absolute; */
+    /* background-color: blue; */
+    /* opacity: 0.7; */
+    /* background-size: 100% 100%; */
+    /* background-position: 50% 50%; */
+}
+
+body .logo {
+	background-image: url(../img/Bg/logodh_1.png);
+	background-color: yellow;
+}
+
+/* body .guia { */
+    /* position: fixed; */
+    /* width: 200px; */
+    /* height: 40px; */
+    /* background-color: blue; */
+    /* opacity: 0.8; */
+/* }	 */
 @media (max-width:480px){
 	body{
 		overflow-x:hidden;
@@ -768,7 +885,7 @@ body.music .lnkout:hover{
 		font-family: 'Comfortaa';
 		/* font-size: 1.1875em; */
 		/* font-size: 112%; */
-		padding-top: 32.4%;
+		padding-top: 30.4%;
 		padding-bottom: 10.2%;
 		text-align: center;
 		position: relative;
@@ -844,25 +961,88 @@ body.music .lnkout:hover{
 		margin-left: 4%;
 	 }
 	
-	body.video .lnkout, body.music .lnkout{
-		width: 143.5%;
-		height: 58.8%;
-		left: 12.5%;
+	body.video .lnkout {
+		width: 131.5%;
+		height: 49.5%;
+		left: 17.5%;
 		margin-left: -20%;
-		top: 88.8%;
+		top: 92.4%;
 	}
 	
-	body.video .lnkout:hover, body.music .lnkout:hover{
-		position: absolute;
-		width: 245.5%;
-		height: 147.1%;
-		left: -38%;
+	body.music .lnkout{
+		width: 129%;
+		height: 47.8%;
+		left: 19.5%;
 		margin-left: -20%;
-		top: 29.9%;
-		background-position: 50% 50%;
+		top: 100.8%;
+	}
+		
+	body.music .lnkout:hover + .lnkoutHover {
+		position: absolute;
+		width: 243.755%;
+		height: 145.70%;
+		left: -57.7%;
+		top: 30.8%;
+		background-position: top;
 		background-repeat: no-repeat;
 		background-size: 100% 100%;
+		/* background-color: blue; */
+		/* opacity: 1.0; */
 	}
+	
+	body.video .lnkout:hover + .lnkoutHover {
+		position: absolute;
+		width: 245.9%;
+		height: 147.2%;
+		left: -59%;
+		top: 29.9%;
+		background-position: 100% 0%;
+		background-size: 99.8% 99.9%;
+		/* opacity: 0.4; */
+	}
+	
+	/* PENTAFX */
+	body.video .fondo a.lnko {
+		position: absolute;
+		width: 39.6%;
+		height: 14.9%;
+		top: 27.7%;
+		left: 34.3%;
+		z-index: 500;
+		/* background-color: blue; */
+		/* opacity: 0.5; */
+	}
+	
+	body.music .fondo a.lnko {
+		position: absolute;
+		width: 38.4%;
+		height: 13.8%;
+		top: 30.5%;
+		left: 35.1%;
+		/* z-index: 500; */
+		/* background-color: blue; */
+		/* opacity: 0.5; */
+	}	
+	body .fondo .pentafx {
+		position: absolute;
+		/* background-color: blue; */
+		/* opacity: 0.5; */
+		width: 74.45%;
+		/* height: 44.362%; */
+		height: 44.357%;
+		left: 17.014%;
+		top: 8.82%;
+		/* z-index: 500; */
+	}
+	
+	/* body.video .fondo a.lnko:hover + .pentafx { */
+		/* background-image: url(../img/Bg/b/video_pentagono_fx.png); */
+	/* } */
+		
+	/* body.music .fondo a.lnko:hover + .pentafx { */
+		/* background-image: url(../img/Bg/b/music_pentagono_fx.png); */
+	/* } */
+	
 	#button2 {
 		background-position: 15.4% 3.2%;
 	}
